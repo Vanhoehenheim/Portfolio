@@ -13,7 +13,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative overflow-hidden pb-24 pt-10" id="hero">
+    <section className="relative overflow-hidden" id="hero">
       {/* Add the SplashCursor with customized subtle props */}
       {/* <SplashCursor 
         DENSITY_DISSIPATION={5}
@@ -64,7 +64,7 @@ const HeroSection = () => {
           >
             <MagneticButton>
               <button 
-                className="button-playful primary flex items-center gap-2 text-sm sm:text-base w-full sm:w-auto"
+                className="button-playful primary flex items-center gap-2 text-sm sm:text-base"
                 onClick={scrollToProjects}
               >
                 View My Work <ArrowDown size={16} className="sm:w-[18px] sm:h-[18px]" />
@@ -76,7 +76,7 @@ const HeroSection = () => {
                 download="Prajay_Panangadan_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="button-playful outline flex items-center gap-2 text-sm sm:text-base w-full sm:w-auto"
+                className="button-playful outline flex items-center gap-2 text-sm sm:text-base"
               >
                 Download Resume <Download size={18} className="sm:w-[18px] sm:h-[18px]" />
               </a>
