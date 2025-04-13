@@ -68,6 +68,12 @@ const companyExperiencesData: CompanyExperience[] = [
   }
 ];
 
+// Map company names to their URLs
+const companyUrls: { [key: string]: string } = {
+  "University of Florida - College of Medicine": "https://qpsi.med.ufl.edu/",
+  "Dell Technologies": "https://www.dell.com/en-us"
+};
+
 const ExperienceSection = () => {
   const [selectedCompany, setSelectedCompany] = useState<string>(
     companyExperiencesData[0].companyName
@@ -105,16 +111,16 @@ const ExperienceSection = () => {
   return (
     <motion.section 
       id="experience" 
-      className="pb-12 lg:pb-24 bg-background"
+      className="pb-16 lg:pb-24 bg-background"
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
     >
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="mb-8 lg:mb-16 max-w-3xl">
-          <h2 className="text-2xl md:text-3xl font-bold mb-2 font-mono flex items-center justify-center lg:justify-start gap-3">
-            <span className="text-playful-pink text-xl sm:text-2xl md:text-3xl">01.</span>
+      <div className="container mx-auto px-4 lg:px-32">
+      <div className="mb-8 lg:mb-16">
+          <h2 className="text-2xl md:text-3xl font-bold mb-2 font-mono flex items-center justify-center gap-3">
+            <span className="text-playful-pink text-2xl md:text-3xl">01.</span>
             Where I've Worked
           </h2>
         </div>
@@ -151,13 +157,18 @@ const ExperienceSection = () => {
                 >
                   {activeExperience.roles.map((role, index) => (
                     <div key={role.id} className={`${index > 0 ? 'mt-6 pt-6 border-t border-border/50' : ''}`}>
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-foreground mb-1">
+                      <h3 className="text-md  sm:text-lg md:text-xl font-semibold text-foreground mb-1">
                         {role.title} 
                         <span className="text-playful-pink group">
                           {" @ "}
-                          <span className="group-hover:underline decoration-playful-pink/50 underline-offset-4 transition-all duration-200 cursor-pointer">
+                          <a 
+                            href={companyUrls[activeExperience.companyName]} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="group-hover:underline decoration-playful-pink/50 underline-offset-4 transition-all duration-200 cursor-pointer"
+                          >
                             {activeExperience.companyName}
-                          </span>
+                          </a>
                         </span>
                       </h3>
                       <p className="text-xs sm:text-sm font-mono text-muted-foreground mb-4 tracking-wider">

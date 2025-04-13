@@ -1,4 +1,4 @@
-import { ArrowDown, Download } from "lucide-react";
+import { ArrowDown, Contact, Dock, Download, File, Hand, Handshake } from "lucide-react";
 import { motion } from "framer-motion";
 import { LampContainer } from "./ui/lamp";
 import { SplashCursor } from "./ui/splash-cursor";
@@ -12,6 +12,12 @@ const HeroSection = () => {
     }
   };
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section className="relative overflow-hidden" id="hero">
       {/* Add the SplashCursor with customized subtle props */}
@@ -65,20 +71,20 @@ const HeroSection = () => {
             <MagneticButton>
               <button 
                 className="button-playful primary flex items-center gap-2 text-sm sm:text-base"
-                onClick={scrollToProjects}
+                onClick={scrollToContact}
               >
-                View My Work <ArrowDown size={16} className="sm:w-[18px] sm:h-[18px]" />
+                Get in Touch <Handshake size={16} className="sm:w-[18px] sm:h-[18px]" />
               </button>
             </MagneticButton>
             <MagneticButton>
               <a 
-                href="/Prajay_Panangadan_Resume.pdf" 
+                href="https://drive.google.com/file/d/1bHC7CKOPvZYTWIQU93PJ3TMVqAD1Doxv/view?usp=sharing" 
                 download="Prajay_Panangadan_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button-playful outline flex items-center gap-2 text-sm sm:text-base"
               >
-                Download Resume <Download size={18} className="sm:w-[18px] sm:h-[18px]" />
+                My Resume <File size={18} className="sm:w-[18px] sm:h-[18px]" />
               </a>
             </MagneticButton>
           </motion.div>

@@ -7,6 +7,7 @@ import AboutSection from '../components/AboutSection';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 import SideAffixes from '../components/SideAffixes';
+import ContactSection from '@/components/ContactSection';
 
 const Index = () => {
   // Scroll reveal animation
@@ -35,6 +36,7 @@ const Index = () => {
         <ExperienceSection />
         <ProjectsSection />
         <AboutSection />
+        <ContactSection />
       </main>
       <Footer />
       <ScrollToTop />

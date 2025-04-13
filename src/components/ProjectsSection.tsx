@@ -39,8 +39,8 @@ const projects: Project[] = [
     description: "My personal portfolio website :)",
     image: portfolio, // Placeholder image
     tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    liveUrl: "https://prajay.dev", // Example URL
-    githubUrl: "https://github.com/yourusername/portfolio", // Example GitHub link
+    liveUrl: "https://prajay.vercel.app", // Example URL
+    githubUrl: "https://github.com/Vanhoehenheim/portfolio", // Example GitHub link
   },
 ];
 
@@ -58,21 +58,21 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="pb-12 lg:pb-24 relative bg-background dark:bg-gradient-to-b dark:from-background dark:to-background/90"
+      className="pb-20 lg:pb-32 relative bg-background dark:bg-gradient-to-b dark:from-background dark:to-background/90"
     >
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 lg:px-32 relative z-10">
         <div className="mb-8 lg:mb-16 ">
-          <h2 className="text-2xl md:text-3xl font-bold mb-2 font-mono flex items-center justify-center lg:justify-start gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-2 font-mono flex items-center justify-center gap-3">
             <span className="text-playful-pink text-2xl md:text-3xl">02.</span>
             Projects
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground text-center lg:text-left">
+          <p className="text-lg md:text-xl text-muted-foreground text-center">
             Some things I'm proud of!
           </p>
         </div>
 
         {/* Removed mobile/medium spacing, kept lg spacing */}
-        <div className="lg:space-y-28 lg:px-40">
+        <div className="lg:space-y-28 lg:px-24">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -126,15 +126,16 @@ const ProjectsSection = () => {
                   <div
                     className={`relative lg:absolute lg:w-[120%] ${index % 2 === 0 ? 'lg:-left-16' : 'lg:-right-16'} z-10 mb-5 lg:bg-card lg:border lg:border-white lg:rounded-lg lg:p-6 lg:shadow-lg`}
                   >
-                    <p className="text-sm lg:text-base text-muted-foreground text-left">{project.description}</p>
+                    <p className="text-sm lg:text-md text-muted-foreground text-left">{project.description}</p>
                   </div>
 
                   {/* Restore original margins for lg */}
-                  <div className={`flex flex-wrap gap-3 mt-3 mb-5 lg:mt-28 ${index % 2 === 0 ? 'lg:justify-end' : 'lg:justify-start'}`}>
+                  <div className={`flex flex-wrap gap-x-4 gap-y-2 mt-3 mb-5 lg:mt-28 ${index % 2 === 0 ? 'lg:justify-end' : 'lg:justify-start'}`}>
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-xs font-mono px-3 py-1 rounded-full bg-secondary text-secondary-foreground shadow-sm"
+                        // Removed pill styles, added underline, kept font-mono
+                        className="text-xs font-mono text-foreground underline decoration-playful-pink underline-offset-4"
                       >
                         {tag}
                       </span>
