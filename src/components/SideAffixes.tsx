@@ -31,20 +31,20 @@ const SideAffixes = () => {
           </a>
         ))}
         {/* Vertical Line */}
-        <div className="h-24 w-px bg-muted-foreground/50 mt-6"></div>
+        <div className="h-16 w-px bg-muted-foreground/50 mt-6"></div>
       </div>
 
       {/* Right Side: Email */}
       <div className="hidden lg:flex fixed bottom-0 right-8 xl:right-12 z-30 flex-col items-center space-y-6">
         <a
           href={`mailto:${email}`}
-          className="text-sm font-mono tracking-widest text-muted-foreground hover:text-playful-pink hover:-translate-y-0.5 transition-all duration-200"
+          className="text-xs font-mono tracking-widest text-muted-foreground hover:text-playful-pink hover:-translate-y-0.5 transition-all duration-200"
           style={{ writingMode: 'vertical-rl' }}
         >
           {email}
         </a>
         {/* Vertical Line */}
-        <div className="h-24 w-px bg-muted-foreground/50 mt-6"></div>
+        <div className="h-16 w-px bg-muted-foreground/50 mt-6"></div>
       </div>
     </>
   );
