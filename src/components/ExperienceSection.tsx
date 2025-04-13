@@ -113,7 +113,7 @@ const ExperienceSection = () => {
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="mb-8 lg:mb-16 max-w-3xl">
-          <h2 className="text-3xl md:text-4xl font-bold mb-2 font-mono flex items-center justify-center lg:justify-start gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-2 font-mono flex items-center justify-center lg:justify-start gap-3">
             <span className="text-playful-pink text-xl sm:text-2xl md:text-3xl">01.</span>
             Where I've Worked
           </h2>
