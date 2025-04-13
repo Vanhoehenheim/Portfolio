@@ -73,7 +73,7 @@
   }
 
   .button-playful.primary {
-    @apply border-playful-yellow bg-transparent text-foreground hover:bg-playful-yellow/20;
+    @apply border-black dark:border-white bg-transparent text-foreground hover:bg-playful-yellow/20;
   }
 
   .button-playful.outline {

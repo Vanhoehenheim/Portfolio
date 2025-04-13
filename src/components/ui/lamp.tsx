@@ -13,11 +13,11 @@ export const LampContainer = ({
   return (
     <div
       className={cn(
-        "relative flex min-h-screen flex-col items-center justify-start sm:justify-center overflow-hidden w-full rounded-md z-0",
+        "relative flex min-h-dvh flex-col items-center justify-start sm:justify-center overflow-hidden w-full rounded-md z-0",
         className
       )}
     >
-      <div className="relative flex w-[90vw] md:w-full flex-1 scale-y-100 md:scale-y-125 items-center justify-center isolate z-0 -translate-y-24 md:translate-y-0">
+      <div className="relative flex w-[90vw] md:w-full flex-1 scale-y-100 md:scale-y-125 items-center justify-center isolate z-0 -translate-y-16 md:translate-y-10">
         <motion.div
           initial={{ opacity: 0.5, width: "min(12rem, 30vw)" }}
           whileInView={{ opacity: 0.7, width: "min(28rem, 60vw)" }}
