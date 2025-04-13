@@ -77,7 +77,7 @@ export const LampContainer = ({
         <div className="absolute inset-auto z-40 h-28 md:h-44 w-full -translate-y-[8.5rem] md:-translate-y-[12.5rem] bg-background"></div>
       </div>
 
-      <div className="relative z-50 flex -translate-y-36 md:-translate-y-36 lg:-translate-y-40 flex-col items-center px-5">
+      <div className="relative z-50 flex -translate-y-48 sm:-translate-y-44 md:-translate-y-40 lg:-translate-y-48 flex-col items-center px-5">
         {children}
       </div>
     </div>

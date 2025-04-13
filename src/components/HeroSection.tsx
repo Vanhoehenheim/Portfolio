@@ -41,7 +41,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="text-lg font-playful text-playful-pink mb-2"
+            className="text-md lg:text-lg font-playful text-playful-pink lg:mb-2"
           >
             Hello, I'm
           </motion.h2>
@@ -49,7 +49,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.7 }}
-            className="text-4xl md:text-6xl font-bold mb-4 py-2 text-black dark:text-white"
+            className="text-3xl md:text-5xl font-bold mb-2 lg:mb-4 text-black dark:text-white"
           >
             Prajay<span className="text-playful-pink">_</span>
           </motion.h1>
@@ -57,7 +57,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="text-md lg:text-xl text-muted-foreground mb-8"
+            className="text-sm md:text-base lg:text-xl text-muted-foreground mb-4 lg:mb-8"
           >
             software engineer ~ building cool experiences with code.
           </motion.p>
@@ -70,7 +70,7 @@ const HeroSection = () => {
           >
             <MagneticButton>
               <button 
-                className="button-playful primary flex items-center gap-2 text-sm sm:text-base"
+                className="button-playful primary flex items-center gap-2 text-xs sm:text-base"
                 onClick={scrollToContact}
               >
                 Get in Touch <Handshake size={16} className="sm:w-[18px] sm:h-[18px]" />
@@ -82,7 +82,7 @@ const HeroSection = () => {
                 download="Prajay_Panangadan_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="button-playful outline flex items-center gap-2 text-sm sm:text-base"
+                className="button-playful outline flex items-center gap-2 text-xs sm:text-base"
               >
                 My Resume <File size={18} className="sm:w-[18px] sm:h-[18px]" />
               </a>
