@@ -111,7 +111,7 @@ const ExperienceSection = () => {
   return (
     <motion.section 
       id="experience" 
-      className="pb-16 lg:pb-24 bg-background"
+      className="pb-20 lg:pb-32 bg-background"
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"

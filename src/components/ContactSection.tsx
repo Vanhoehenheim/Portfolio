@@ -15,7 +15,7 @@ const ContactSection = () => {
   return (
     <motion.section 
       id="contact" 
-      className="pb-20 lg:pb-32" // Added padding
+      className="pb-10 lg:pb-12" // Added padding
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"

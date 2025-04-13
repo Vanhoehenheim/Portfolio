@@ -51,7 +51,7 @@ const HeroSection = () => {
             transition={{ delay: 0.5, duration: 0.7 }}
             className="text-3xl md:text-5xl font-bold mb-2 lg:mb-4 text-black dark:text-white"
           >
-            Prajay<span className="text-playful-pink">_</span>
+            Prajay<span className="text-playful-pink">.</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}

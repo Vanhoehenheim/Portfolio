@@ -16,7 +16,7 @@ const AboutSection = () => {
   return (
     <motion.section 
       id="about" 
-      className="pb-12 lg:pb-24"
+      className="pb-20 lg:pb-32"
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
