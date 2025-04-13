@@ -48,25 +48,25 @@ const NavBar = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <button 
             onClick={() => scrollToSection('projects')}
-            className="text-foreground hover:text-playful-purple transition-colors"
+            className="text-foreground hover:text-playful-pink transition-colors"
           >
             Projects
           </button>
           <button 
             onClick={() => scrollToSection('experience')}
-            className="text-foreground hover:text-playful-purple transition-colors"
+            className="text-foreground hover:text-playful-pink transition-colors"
           >
             Experience
           </button>
           <button 
             onClick={() => scrollToSection('about')}
-            className="text-foreground hover:text-playful-purple transition-colors"
+            className="text-foreground hover:text-playful-pink transition-colors"
           >
             About
           </button>
           <button 
             onClick={() => scrollToSection('about')}
-            className="text-foreground hover:text-playful-purple transition-colors"
+            className="text-foreground hover:text-playful-pink transition-colors"
           >
             Contact
           </button>
@@ -99,25 +99,25 @@ const NavBar = () => {
             <nav className="flex flex-col items-center space-y-4">
               <button 
                 onClick={() => scrollToSection('projects')}
-                className="text-foreground hover:text-playful-purple transition-colors py-2"
+                className="text-foreground hover:text-playful-pink transition-colors py-2"
               >
                 Projects
               </button>
               <button 
                 onClick={() => scrollToSection('experience')}
-                className="text-foreground hover:text-playful-purple transition-colors py-2"
+                className="text-foreground hover:text-playful-pink transition-colors py-2"
               >
                 Experience
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="text-foreground hover:text-playful-purple transition-colors py-2"
+                className="text-foreground hover:text-playful-pink transition-colors py-2"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="text-foreground hover:text-playful-purple transition-colors py-2"
+                className="text-foreground hover:text-playful-pink transition-colors py-2"
               >
                 Contact
               </button>
