@@ -61,7 +61,7 @@ export const LampContainer = ({
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="absolute inset-auto z-30 h-24 md:h-36 w-32 md:w-64 -translate-y-[4rem] md:-translate-y-[6rem] rounded-full bg-playful-pink blur-xl md:blur-2xl"
+          className="absolute inset-auto z-30 h-12 md:h-24 w-32 md:w-64 -translate-y-[4rem] md:-translate-y-[6rem] rounded-full bg-playful-pink blur-2xl md:blur-3xl"
         ></motion.div>
         <motion.div
           initial={{ width: "min(12rem, 30vw)" }}
