@@ -19,7 +19,7 @@ const HeroSection = () => {
     }
   };
   return (
-    <section className="relative overflow-hidden" id="hero">
+    <section className="relative overflow-hidden h-[100dvh]" id="hero">
       {/* Add the SplashCursor with customized subtle props */}
       {/* <SplashCursor 
         DENSITY_DISSIPATION={5}
@@ -49,7 +49,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.7 }}
-            className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-br from-foreground to-muted-foreground py-2 bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl font-bold mb-4 py-2 text-black dark:text-white"
           >
             Prajay<span className="text-playful-pink">_</span>
           </motion.h1>
