@@ -1,5 +1,8 @@
 import { ExternalLink, Github } from 'lucide-react';
 import { motion } from 'framer-motion';
+import gatorSwamp from '../assets/gatorSwamp.png';
+import abhivarta from '../assets/abhivarta.png';
+import portfolio from '../assets/portfolio.png';
 
 interface Project {
   id: number;
@@ -16,7 +19,7 @@ const projects: Project[] = [
     id: 1,
     title: "Gator Swamp",
     description: "Reddit-inspired social platform with real-time messaging.",
-    image: "/assets/gatorSwamp.png", // Placeholder image
+    image: gatorSwamp, // Placeholder image
     tags: ["React", "Tailwind CSS", "Go", "MongoDB", "Vercel", "Railway", "JWT"],
     liveUrl: "https://gator-swamp.vercel.app/login", // Added the provided project link
     githubUrl: "https://github.com/Vanhoehenheim/Gator_Swamp_Frontend", // No GitHub link provided
@@ -25,7 +28,7 @@ const projects: Project[] = [
     id: 2,
     title: "Abhivarta",
     description: "Website for the Annual Sports Festival of Manipal University Jaipur.",
-    image: "/assets/abhivarta.png", // Placeholder image
+    image: abhivarta, // Placeholder image
     tags: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Firebase"],
     liveUrl: 'https://abhivarta2020.web.app/', // No live link provided
     githubUrl: undefined, // No GitHub link provided
@@ -34,7 +37,7 @@ const projects: Project[] = [
     id: 3,
     title: "Portfolio",
     description: "My personal portfolio website :)",
-    image: "/assets/portfolio.png", // Placeholder image
+    image: portfolio, // Placeholder image
     tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     liveUrl: "https://prajay.dev", // Example URL
     githubUrl: "https://github.com/yourusername/portfolio", // Example GitHub link
