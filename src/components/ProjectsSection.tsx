@@ -1,7 +1,7 @@
 import { ExternalLink, Github } from 'lucide-react';
 import { motion } from 'framer-motion';
 import gatorSwamp from '../assets/gatorSwamp.png';
-import abhivarta from '../assets/abhivarta.png';
+import abhivarta from '../assets/Abhivarta.png';
 import portfolio from '../assets/portfolio.png';
 
 interface Project {
