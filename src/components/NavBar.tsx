@@ -65,7 +65,7 @@ const NavBar = () => {
             About
           </button>
           <button 
-            onClick={() => scrollToSection('contact')}
+            onClick={() => scrollToSection('about')}
             className="text-foreground hover:text-playful-purple transition-colors"
           >
             Contact
