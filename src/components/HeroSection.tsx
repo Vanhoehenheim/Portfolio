@@ -60,11 +60,11 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.9 }}
-            className="flex flex-col items-center sm:flex-row sm:items-start gap-4"
+            className="flex flex-wrap gap-4"
           >
             <MagneticButton>
               <button 
-                className="button-playful primary flex items-center gap-2 text-sm sm:text-base"
+                className="button-playful primary flex items-center gap-2 text-sm sm:text-base w-full sm:w-auto"
                 onClick={scrollToProjects}
               >
                 View My Work <ArrowDown size={16} className="sm:w-[18px] sm:h-[18px]" />
@@ -76,7 +76,7 @@ const HeroSection = () => {
                 download="Prajay_Panangadan_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="button-playful outline flex items-center gap-2 text-sm sm:text-base"
+                className="button-playful outline flex items-center gap-2 text-sm sm:text-base w-full sm:w-auto"
               >
                 Download Resume <Download size={18} className="sm:w-[18px] sm:h-[18px]" />
               </a>
