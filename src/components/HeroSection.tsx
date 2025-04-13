@@ -70,7 +70,7 @@ const HeroSection = () => {
           >
             <MagneticButton>
               <button 
-                className="button-playful  primary flex items-center justify-center gap-2 text-xs sm:text-base"
+                className="button-playful primary flex items-center justify-center gap-2 text-xs sm:text-base"
                 onClick={scrollToContact}
               >
                 Get in Touch <Handshake size={16} className="sm:w-[18px] sm:h-[18px]" />
@@ -79,7 +79,7 @@ const HeroSection = () => {
             <MagneticButton>
               <button 
                 onClick={() => window.open('https://drive.google.com/file/d/1bHC7CKOPvZYTWIQU93PJ3TMVqAD1Doxv/view?usp=sharing', '_blank')}
-                className="button-playful  outline flex items-center justify-center gap-2 text-xs sm:text-base"
+                className="button-playful outline flex items-center justify-center gap-2 text-xs sm:text-base"
               >
                 My Resume <File size={18} className="sm:w-[18px] sm:h-[18px]" />
               </button>
