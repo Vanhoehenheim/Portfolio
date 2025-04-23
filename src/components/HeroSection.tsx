@@ -19,17 +19,7 @@ const HeroSection = () => {
     }
   };
   return (
-    <section className="relative overflow-hidden" id="hero">
-      {/* Add the SplashCursor with customized subtle props */}
-      {/* <SplashCursor 
-        DENSITY_DISSIPATION={5}
-        VELOCITY_DISSIPATION={3}
-        CURL={1.5}
-        SPLAT_RADIUS={0.12}
-        SPLAT_FORCE={3000}
-        COLOR_UPDATE_SPEED={3}
-      /> */}
-      
+    <section className="relative overflow-hidden" id="hero">    
       <LampContainer className="pt-20">
         <motion.div
           initial={{ opacity: 0 }}

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import gatorSwamp from '../assets/gatorSwamp.png';
 import abhivarta from '../assets/Abhivarta.png';
 import portfolio from '../assets/portfolio.png';
-
+import balloonRadio from '../assets/balloon-radio.png'
 interface Project {
   id: number;
   title: string;
@@ -26,6 +26,15 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: "Balloon Radio",
+    description: "Global radio player using the Windborne Balloon API",
+    image: balloonRadio, // Placeholder image
+    tags: ["React", "Tailwind CSS", "Vercel", "Railway"],
+    liveUrl: "https://balloon-radio.vercel.app/", // Added the provided project link
+    githubUrl: "https://github.com/Vanhoehenheim/balloon-radio", // No GitHub link provided
+  },
+  {
+    id: 3,
     title: "Abhivarta",
     description: "Website for the Annual Sports Festival of Manipal University Jaipur.",
     image: abhivarta, // Placeholder image
@@ -34,7 +43,7 @@ const projects: Project[] = [
     githubUrl: undefined, // No GitHub link provided
   },
   {
-    id: 3,
+    id: 4,
     title: "Portfolio",
     description: "My personal portfolio website :)",
     image: portfolio, // Placeholder image
