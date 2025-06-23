@@ -4,6 +4,8 @@ import gatorSwamp from '../assets/gatorSwamp.png';
 import abhivarta from '../assets/Abhivarta.png';
 import portfolio from '../assets/portfolio.png';
 import balloonRadio from '../assets/balloon-radio.png'
+import cribb from '../assets/cribb.png'
+
 interface Project {
   id: number;
   title: string;
@@ -17,6 +19,15 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
+    title: "Cribb",
+    description: "Roommate management platform with chore and pantry tracking.",
+    image: cribb, // Placeholder image
+    tags: ["Angular", "Typescript", "Go", "MongoDB", "Railway"],
+    liveUrl: 'https://cribb-home.vercel.app/', 
+    githubUrl: 'https://github.com/Vanhoehenheim/CribbFrontend',
+  },
+  {
+    id: 2,
     title: "Gator Swamp",
     description: "Reddit-inspired social platform with real-time messaging.",
     image: gatorSwamp, // Placeholder image
@@ -25,7 +36,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/Vanhoehenheim/Gator_Swamp_Frontend", // No GitHub link provided
   },
   {
-    id: 2,
+    id: 3,
     title: "Balloon Radio",
     description: "Global radio player using the Windborne Balloon API",
     image: balloonRadio, // Placeholder image
@@ -33,15 +44,15 @@ const projects: Project[] = [
     liveUrl: "https://balloon-radio.vercel.app/", // Added the provided project link
     githubUrl: "https://github.com/Vanhoehenheim/balloon-radio", // No GitHub link provided
   },
-  {
-    id: 3,
-    title: "Abhivarta",
-    description: "Website for the Annual Sports Festival of Manipal University Jaipur.",
-    image: abhivarta, // Placeholder image
-    tags: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Firebase"],
-    liveUrl: 'https://abhivarta2020.web.app/', // No live link provided
-    githubUrl: undefined, // No GitHub link provided
-  },
+  // {
+  //   id: 3,
+  //   title: "Abhivarta",
+  //   description: "Website for the Annual Sports Festival of Manipal University Jaipur.",
+  //   image: abhivarta, // Placeholder image
+  //   tags: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Firebase"],
+  //   liveUrl: 'https://abhivarta2020.web.app/', // No live link provided
+  //   githubUrl: undefined, // No GitHub link provided
+  // },
   {
     id: 4,
     title: "Portfolio",
