@@ -8,7 +8,7 @@ const SideAffixes = () => {
   // --- IMPORTANT: Replace with your actual links and email ---
   const socialLinks = [
     { name: 'GitHub', icon: Github, url: 'https://github.com/Vanhoehenheim' },
-    { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/prajay-prashanth/' },
+    { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/prajay-panangadan/' },
     { name: 'Email', icon: Mail, url: 'mailto:panangadanprajay@ufl.edu' },
   ];
   const email = 'panangadanprajay@ufl.edu';

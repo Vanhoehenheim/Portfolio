@@ -53,11 +53,11 @@ const ContactSection = () => {
               <Github className="h-6 w-6 text-foreground group-hover:text-playful-pink transition-colors" />
             </div>
              <div className="font-medium text-sm group-hover:text-playful-pink transition-colors">GitHub</div>
-             <div className="text-xs text-muted-foreground">@Vanhoehenheim</div>
+             <div className="text-xs text-muted-foreground truncate w-full px-1">@Vanhoehenheim</div>
           </a>
 
           <a 
-            href="https://www.linkedin.com/in/prajay-prashanth/"
+            href="https://www.linkedin.com/in/prajay-panangadan/"
             target="_blank" 
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 p-4 rounded-lg border border-transparent hover:border-playful-pink/30 hover:bg-secondary transition-all group w-full sm:w-auto text-center flex-1 min-w-[140px]"
@@ -67,7 +67,7 @@ const ContactSection = () => {
               <Linkedin className="h-6 w-6 text-foreground group-hover:text-playful-pink transition-colors" />
             </div>
             <div className="font-medium text-sm group-hover:text-playful-pink transition-colors">LinkedIn</div>
-            <div className="text-xs text-muted-foreground">prajay-prashanth</div>
+            <div className="text-xs text-muted-foreground truncate w-full px-1">prajay-panangadan</div>
           </a>
         </div>
       </div>

@@ -68,7 +68,7 @@ const HeroSection = () => {
             </MagneticButton>
             <MagneticButton>
               <button 
-                onClick={() => window.open('https://drive.google.com/file/d/1acxnBnkiKUorf_jpmct3E7DPTEPHBZ0K/view?usp=sharing', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1KSRil5X6srfEVK3qZIMpyq4x9aM-LF51/view?usp=sharing', '_blank')}
                 className="button-playful outline flex items-center justify-center gap-2 text-xs sm:text-base"
               >
                 My Resume <File size={18} className="sm:w-[18px] sm:h-[18px]" />

@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { Play } from "lucide-react";
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from "framer-motion";
 
 interface Role {
   id: number;
@@ -17,20 +17,20 @@ interface CompanyExperience {
 
 const companyExperiencesData: CompanyExperience[] = [
   {
-    companyName: "University of Florida - College of Medicine",
-    location: "Florida, USA",
+    companyName: "UF Health",
+    location: "Gainesville, FL",
     roles: [
       {
         id: 1,
-        title: "Healthcare AI/NLP Intern",
+        title: "Software Intern",
         period: "Jan 2025 – Present",
         description: [
-          "Implemented graph-based anomaly detection for Heart-Failure patient records.",
-          "Improved healthcare feedback analysis using sentiment analysis and BERTopic models.",
-          "Developed an interactive dashboard to visualize patient satisfaction metrics."
+          "Built clinical NLP pipeline using MedGemma and GatorTron with vLLM.",
+          "Applied pipeline to sepsis risk prediction with clinician collaboration.",
+          "Automated patient feedback classification using ClinicalBERT.",
         ],
       },
-    ]
+    ],
   },
   {
     companyName: "Dell Technologies",
@@ -41,9 +41,9 @@ const companyExperiencesData: CompanyExperience[] = [
         title: "Software Engineer 2",
         period: "Feb 2024 – Aug 2024",
         description: [
-          "Engineered a Digital Inventory EOQ Projection solution with dynamic visualizations.",
-          "Led transition to Micro Frontend architecture using reusable Angular components.",
-          "Streamlined feature delivery by migrating from Springboot REST APIs to FastAPI."
+          "Built Aging Inventory Management Tool using Angular and Go with real-time data binding.",
+          "Migrated monolithic frontend to Micro Frontend architecture using reusable Angular components.",
+          "Refactored Spring Boot REST APIs to Golang for improved performance.",
         ],
       },
       {
@@ -51,8 +51,8 @@ const companyExperiencesData: CompanyExperience[] = [
         title: "Software Engineer 1",
         period: "Aug 2022 – Jan 2024",
         description: [
-          "Enhanced Service Anomaly Detection accuracy using NLP and ensemble modeling.",
-          "Improved model training speed by migrating to Dell's Cloud GPU environment.",
+          "Developed microservice log classification system using Random Forest and MLP ensemble models.",
+          "Migrated ML models to Dell's cloud GPU infrastructure with Kubernetes and Docker.",
         ],
       },
       {
@@ -61,17 +61,17 @@ const companyExperiencesData: CompanyExperience[] = [
         period: "Feb 2022 – May 2022",
         description: [
           "Optimized Dell Sales Application development with responsive Angular components.",
-          "Engineered an accessibility solution for dyslexic users using Gesture Detection."
+          "Engineered an accessibility solution for dyslexic users using Gesture Detection.",
         ],
-      }
-    ]
-  }
+      },
+    ],
+  },
 ];
 
 // Map company names to their URLs
 const companyUrls: { [key: string]: string } = {
   "University of Florida - College of Medicine": "https://qpsi.med.ufl.edu/",
-  "Dell Technologies": "https://www.dell.com/en-us"
+  "Dell Technologies": "https://www.dell.com/en-us",
 };
 
 const ExperienceSection = () => {
@@ -80,37 +80,37 @@ const ExperienceSection = () => {
   );
 
   const activeExperience = companyExperiencesData.find(
-    exp => exp.companyName === selectedCompany
+    (exp) => exp.companyName === selectedCompany
   );
 
   // Variants for the overall section entrance
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: "easeOut" }
-    }
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
 
   // Variants for the content switching animation
   const contentVariants = {
     initial: { opacity: 0, x: -20 }, // Start faded out and slightly to the left
-    animate: { 
-      opacity: 1, 
+    animate: {
+      opacity: 1,
       x: 0, // Fade in and move to original position
-      transition: { duration: 0.3, ease: "easeOut" }
+      transition: { duration: 0.3, ease: "easeOut" },
     },
-    exit: { 
-      opacity: 0, 
+    exit: {
+      opacity: 0,
       x: 20, // Fade out and move slightly to the right
-      transition: { duration: 0.2, ease: "easeIn" }
-    }
+      transition: { duration: 0.2, ease: "easeIn" },
+    },
   };
 
   return (
-    <motion.section 
-      id="experience" 
+    <motion.section
+      id="experience"
       className="pb-20 lg:pb-32 bg-background"
       variants={sectionVariants}
       initial="hidden"
@@ -118,7 +118,7 @@ const ExperienceSection = () => {
       viewport={{ once: true, amount: 0.1 }}
     >
       <div className="container mx-auto px-4 lg:px-32">
-      <div className="mb-8 lg:mb-16">
+        <div className="mb-8 lg:mb-16">
           <h2 className="text-2xl md:text-3xl font-bold mb-2 font-mono flex items-center justify-center gap-3">
             <span className="text-playful-pink text-2xl md:text-3xl">01.</span>
             Where I've Worked
@@ -134,9 +134,10 @@ const ExperienceSection = () => {
                 className={`
                   px-3 md:px-4 py-3 w-full text-left text-xs md:text-sm font-medium transition-colors duration-200 
                   focus:outline-none focus-visible:ring-2 focus-visible:ring-playful-pink/50 border-l-2
-                  ${selectedCompany === exp.companyName
-                    ? 'bg-playful-pink/10 text-playful-pink border-playful-pink md:border-playful-pink md:border-l-2 md:border-b-0 md:-ml-px'
-                    : 'text-muted-foreground hover:bg-playful-pink/5 hover:text-playful-pink border-transparent md:border-transparent md:border-b-0 md:border-l-2'
+                  ${
+                    selectedCompany === exp.companyName
+                      ? "bg-playful-pink/10 text-playful-pink border-playful-pink md:border-playful-pink md:border-l-2 md:border-b-0 md:-ml-px"
+                      : "text-muted-foreground hover:bg-playful-pink/5 hover:text-playful-pink border-transparent md:border-transparent md:border-b-0 md:border-l-2"
                   }
                 `}
               >
@@ -148,7 +149,7 @@ const ExperienceSection = () => {
           <div className="md:flex-grow md:min-h-[300px]">
             <AnimatePresence mode="wait">
               {activeExperience && (
-                <motion.div 
+                <motion.div
                   key={activeExperience.companyName}
                   variants={contentVariants}
                   initial="initial"
@@ -156,14 +157,19 @@ const ExperienceSection = () => {
                   exit="exit"
                 >
                   {activeExperience.roles.map((role, index) => (
-                    <div key={role.id} className={`${index > 0 ? 'mt-6 pt-6 border-t border-border/50' : ''}`}>
+                    <div
+                      key={role.id}
+                      className={`${
+                        index > 0 ? "mt-6 pt-6 border-t border-border/50" : ""
+                      }`}
+                    >
                       <h3 className="text-md  sm:text-lg md:text-xl font-semibold text-foreground mb-1">
-                        {role.title} 
+                        {role.title}
                         <span className="text-playful-pink group">
                           {" @ "}
-                          <a 
-                            href={companyUrls[activeExperience.companyName]} 
-                            target="_blank" 
+                          <a
+                            href={companyUrls[activeExperience.companyName]}
+                            target="_blank"
                             rel="noopener noreferrer"
                             className="group-hover:underline decoration-playful-pink/50 underline-offset-4 transition-all duration-200 cursor-pointer"
                           >
@@ -176,8 +182,14 @@ const ExperienceSection = () => {
                       </p>
                       <ul className="space-y-2.5">
                         {role.description.map((item, idx) => (
-                          <li key={idx} className="flex items-start gap-3 text-sm sm:text-base text-muted-foreground leading-relaxed">
-                            <Play size={12} className="fill-playful-pink text-playful-pink mt-1 sm:mt-1.5 flex-shrink-0" />
+                          <li
+                            key={idx}
+                            className="flex items-start gap-3 text-sm sm:text-base text-muted-foreground leading-relaxed"
+                          >
+                            <Play
+                              size={12}
+                              className="fill-playful-pink text-playful-pink mt-1 sm:mt-1.5 flex-shrink-0"
+                            />
                             <span>{item}</span>
                           </li>
                         ))}

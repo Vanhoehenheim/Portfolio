@@ -81,7 +81,7 @@ const AboutSection = () => {
                 <div>
                   <div className="flex justify-between items-center">
                     <h4 className="font-bold">University of Florida</h4>
-                    <span className="text-muted-foreground text-xs">Aug 2024 - May 2026</span>
+                    <span className="text-muted-foreground text-xs">Aug 2024 - Dec 2025</span>
                   </div>
                   <p className="text-xs text-playful-pink">M.S. in Computer Science</p>
                 </div>
